@@ -4,10 +4,12 @@
 ### Inspiration
 This project was inspired in https://dribbble.com/shots/9110546-Birthday-input-field component design.
 
-![](https://cdn.dribbble.com/users/414694/screenshots/9110546/media/3b60dd0bed980790ac0f5bcaeeedce16.mp4)
+![](https://github.com/otmaneTheDev/ZodiacEditText/blob/master/images/zodiacedittext_inspiration.gif)
 
 ### Sample project
 View the sample app's source code [here](https://github.com/otmaneTheDev/ZodiacEditText/tree/master/app)
+
+![](https://github.com/otmaneTheDev/ZodiacEditText/blob/master/images/zodiacedittext_sample.gif)
 
 ### Setup
 
