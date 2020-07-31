@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ZodiacEditText">
+        <attr name="errorColor" format="reference|string" />
+        <attr name="defaultColor" format="reference|string" />
+        <attr name="textColor" format="reference|string" />
+        <attr name="hintColor" format="reference|string" />
+    </declare-styleable>
+</resources>

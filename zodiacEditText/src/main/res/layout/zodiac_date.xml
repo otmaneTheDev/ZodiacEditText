@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/birthdayContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_rounded_stroke"
+        android:backgroundTint="@color/defaultColorBlue"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_default">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:padding="@dimen/margin_small"
+            android:src="@drawable/icon_cake"
+            app:layout_constraintBottom_toBottomOf="@id/editTextContainer"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/editTextContainer"
+            tools:layout_editor_absoluteY="25dp" />
+
+        <LinearLayout
+            android:id="@+id/editTextContainer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toEndOf="@id/imageView"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <EditText
+                android:id="@+id/editTextDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="2"
+                android:gravity="center"
+                android:hint="DD"
+                android:inputType="number"
+                android:maxLength="2"
+                android:textColor="@color/defaultColorBlack"
+                android:textColorHint="@color/defaultColorGrey" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="/"
+                android:textColor="@color/defaultColorGrey" />
+
+            <EditText
+                android:id="@+id/editTextMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="2"
+                android:gravity="center"
+                android:hint="MM"
+                android:inputType="number"
+                android:maxLength="2"
+                android:textColor="@color/defaultColorBlack"
+                android:textColorHint="@color/defaultColorGrey" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="/"
+                android:textColor="@color/defaultColorGrey" />
+
+            <EditText
+                android:id="@+id/editTextYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="3"
+                android:gravity="center"
+                android:hint="YYYY"
+                android:inputType="number"
+                android:maxLength="4"
+                android:textColor="@color/defaultColorBlack"
+                android:textColorHint="@color/defaultColorGrey" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/errorMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_half"
+        android:text="This is a random error message"
+        android:textColor="@color/defaultColorRed"
+        android:textSize="12sp"
+        android:visibility="gone" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="defaultColorBlack">#1D1D1D</color>
+    <color name="defaultColorGrey">#A5A5A5</color>
+    <color name="defaultColorRed">#D73222</color>
+    <color name="defaultColorBlue">#0D36E5</color>
+</resources>
